@@ -1,4 +1,8 @@
-const url = window.location.href;
-const length = url.charAt(url.length-1) == '/' ? url.length-1 : url.length;
+// Get the current URL using the location object
+const currentURL = window.location.href;
 
-alert(length || 0);
+// Calculate the length of the URL
+const urlLength = currentURL.length;
+
+// Display the length using an alert
+alert(`The length of the URL is: ${urlLength}`);
